@@ -1,7 +1,5 @@
 # Portfolio — Kuan-Min Kuo (郭寬民)
 
-# Portfolio — Kuan-Min Kuo (郭寬民)
-
 Public Finance, National Chengchi University | 3rd Year
 
 Selected projects in policy research, GIS spatial analysis, and AI evaluation.
