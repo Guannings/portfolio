@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuan-Min Kuo — Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #1a1a1a;
+            background: #fafafa;
+            line-height: 1.7;
+        }
+        .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+        /* Header */
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 48px 0 40px;
+        }
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        header .subtitle {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 16px;
+        }
+        header .contact {
+            font-size: 14px;
+            color: #777;
+        }
+        header .contact a { color: #2563eb; text-decoration: none; }
+        header .contact a:hover { text-decoration: underline; }
+
+        /* Section */
+        section {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            margin: 32px auto;
+            padding: 40px;
+        }
+        section h2 {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #2563eb;
+            margin-bottom: 8px;
+        }
+        section h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: -0.3px;
+        }
+        .org {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .description { font-size: 15px; color: #333; margin-bottom: 16px; }
+        .highlights {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 24px;
+        }
+        .highlights li {
+            font-size: 15px;
+            color: #333;
+            padding: 6px 0 6px 20px;
+            position: relative;
+        }
+        .highlights li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: 700;
+        }
+        .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+        .tag {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 100px;
+            background: #eff6ff;
+            color: #2563eb;
+        }
+
+        /* Image grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 24px 0;
+        }
+        .image-grid.single { grid-template-columns: 1fr; }
+        .image-grid figure {
+            margin: 0;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .image-grid figcaption {
+            font-size: 13px;
+            color: #666;
+            padding: 10px 14px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        /* Outcome badge */
+        .outcome {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 100px;
+            background: #ecfdf5;
+            color: #059669;
+            margin-bottom: 16px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0 60px;
+            font-size: 14px;
+            color: #999;
+        }
+        footer a { color: #2563eb; text-decoration: none; }
+
+        /* Note box */
+        .note {
+            font-size: 13px;
+            color: #666;
+            background: #f9fafb;
+            border-left: 3px solid #d1d5db;
+            padding: 12px 16px;
+            margin-top: 16px;
+            border-radius: 0 6px 6px 0;
+        }
+
+        @media (max-width: 640px) {
+            .image-grid { grid-template-columns: 1fr; }
+            section { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Kuan-Min Kuo (&#37101;&#23532;&#27665;)</h1>
+        <div class="subtitle">Public Finance, National Chengchi University &middot; 3rd Year</div>
+        <div class="contact">
+            <a href="mailto:112207315@g.nccu.edu.tw">112207315@g.nccu.edu.tw</a> &middot;
+            <a href="https://github.com/Guannings">github.com/Guannings</a>
+        </div>
+    </div>
+</header>
+
+<!-- Project 1: OECM -->
+<div class="container">
+<section>
+    <h2>Research &amp; Policy Analysis</h2>
+    <h3>OECM Conservation Certification Proposal for NCCU</h3>
+    <div class="org">EDS International, Inc. &middot; Planning Intern &middot; Summer 2025</div>
+
+    <span class="outcome">&#10003; Proposal accepted by NCCU</span>
+
+    <p class="description">
+        Authored a 55-page formal certification application (&#32147;&#29151;&#35336;&#30059;&#26360;) for NCCU's campus to be recognized as a Conservation Symbiosis Area (&#20445;&#32946;&#20849;&#29983;&#22320;) under Taiwan's domestic conservation framework. The project involved international policy benchmarking, GIS spatial analysis, ecological assessment, and multi-stakeholder coordination.
+    </p>
+
+    <ul class="highlights">
+        <li>Researched the UN/CBD Kunming-Montreal Global Biodiversity Framework (30&times;30 target) and Japan's OECM implementation through official conference reports before adapting findings to the local context</li>
+        <li>Conducted GIS-based spatial analysis using ArcGIS: satellite imagery review (Google Earth, 2021&ndash;2025), ecological corridor mapping across 1.09 km&sup2;, and analysis of multiple data layers (ecological green networks, wildlife habitats, biodiversity hotspots, land use zoning)</li>
+        <li>Coordinated engagement among local communities, government agencies, and university departments to build stakeholder consensus</li>
+        <li>Proposed an environmental monitoring framework with infrared camera traps and water quality testing to establish measurable conservation baselines</li>
+    </ul>
+
+    <div class="tag-row">
+        <span class="tag">GIS / ArcGIS</span>
+        <span class="tag">Policy Research</span>
+        <span class="tag">International Benchmarking</span>
+        <span class="tag">Stakeholder Coordination</span>
+        <span class="tag">Spatial Analysis</span>
+    </div>
+
+    <!-- USER: Add your screenshots here. Name them oecm-landuse.png and oecm-satellite.png and put them in the same folder as this HTML file -->
+    <div class="image-grid">
+        <figure>
+            <img src="oecm-landuse.png" alt="Land use zoning map of NCCU campus and surrounding area">
+            <figcaption>Land use zoning map (&#33274;&#21271;&#24066;&#22303;&#22320;&#20351;&#29992;&#20998;&#21312;) showing the project site boundary and surrounding land classifications</figcaption>
+        </figure>
+        <figure>
+            <img src="oecm-satellite.png" alt="Satellite imagery with ecological corridor boundary">
+            <figcaption>Satellite imagery overlay with proposed conservation area boundary (red outline), covering 1.09 km&sup2;</figcaption>
+        </figure>
+    </div>
+
+    <div class="note">
+        This is a working draft version of the proposal. The final version was submitted by NCCU for government certification.
+    </div>
+</section>
+
+<!-- Project 2: DataAnnotation -->
+<section>
+    <h2>AI Evaluation &amp; User Feedback</h2>
+    <h3>AI Model Evaluation &amp; RLHF Workflows</h3>
+    <div class="org">DataAnnotation &middot; AI Training Specialist &middot; Feb 2026 &ndash; Present</div>
+
+    <p class="description">
+        Evaluate AI model outputs through structured testing protocols, contributing to Reinforcement Learning from Human Feedback (RLHF) workflows that bridge user perspectives with technical model refinement.
+    </p>
+
+    <ul class="highlights">
+        <li>Assess response quality, accuracy, logical coherence, and alignment with user expectations across diverse use cases and prompt types</li>
+        <li>Conduct side-by-side model comparisons to identify performance gaps, strengths, and failure patterns across different model versions</li>
+        <li>Write detailed, actionable feedback for development teams — documenting what works, what creates friction, and how to prioritize iteration</li>
+        <li>Apply a systematic test-analyze-iterate methodology: structured testing &rarr; feedback analysis &rarr; improvement recommendations &rarr; re-evaluation</li>
+    </ul>
+
+    <div class="tag-row">
+        <span class="tag">AI Evaluation</span>
+        <span class="tag">RLHF</span>
+        <span class="tag">User Experience</span>
+        <span class="tag">Structured Testing</span>
+        <span class="tag">Feedback Analysis</span>
+    </div>
+</section>
+
+<!-- Project 3: Qidu -->
+<section>
+    <h2>Urban Planning &amp; Fieldwork</h2>
+    <h3>15-Year Development Plan for Qidu District, Keelung</h3>
+    <div class="org">Planning Practice (II), NCCU &middot; Team of 6 &middot; Sep 2025 &ndash; Present</div>
+
+    <p class="description">
+        Contributing to a comprehensive 15-year district development plan covering land use, transportation (TOD strategies), disaster resilience, and community development for Qidu District, Keelung.
+    </p>
+
+    <ul class="highlights">
+        <li>Conducted GIS-based fieldwork including spatial data collection and demographic analysis</li>
+        <li>Performed community interviews to gather qualitative data on local needs and development priorities</li>
+        <li>Contributed background analysis of local industries, demographics, and economic conditions during the pre-planning research phase</li>
+    </ul>
+
+    <div class="tag-row">
+        <span class="tag">GIS Fieldwork</span>
+        <span class="tag">Community Interviews</span>
+        <span class="tag">Spatial Data</span>
+        <span class="tag">Regional Planning</span>
+    </div>
+
+    <!-- USER: If you have any Qidu maps or fieldwork photos, add them here -->
+    <!--
+    <div class="image-grid single">
+        <figure>
+            <img src="qidu-map.png" alt="Qidu district planning map">
+            <figcaption>Description of the image</figcaption>
+        </figure>
+    </div>
+    -->
+</section>
+
+<!-- Project 4: World Cafe -->
+<section>
+    <h2>Participatory Research</h2>
+    <h3>World Caf&eacute; Facilitation — Regional Sustainable Development</h3>
+    <div class="org">Planning Practice (I), NCCU &middot; Table Leader &middot; Fall 2024</div>
+
+    <p class="description">
+        Served as Table Leader for two World Caf&eacute; sessions on regional sustainable development, facilitating multi-stakeholder discussions and synthesizing diverse perspectives in real time.
+    </p>
+
+    <div class="tag-row">
+        <span class="tag">Facilitation</span>
+        <span class="tag">Stakeholder Engagement</span>
+        <span class="tag">Qualitative Research</span>
+    </div>
+</section>
+</div>
+
+<footer>
+    <div class="container">
+        Kuan-Min Kuo &middot; 2026 &middot; <a href="mailto:112207315@g.nccu.edu.tw">Contact</a>
+    </div>
+</footer>
+
+</body>
+</html>
